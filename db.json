@@ -1,0 +1,80 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "id_user":1,
+            "date":"14 NOV 2021",
+            "imageUrl": "https://nyousefali.com.br/blog/img/06.png",
+            "category":"games",
+            "title":"O que tem de novo no PS5? Tudo que você precisa saber.",
+            "resume":"Acabou de sair esse grande lançamento dos console. Leia esse artigo para saber das novidades!",
+            "content":"Lorem ipsm dafdsjfjdsafjbvjsd dfisdjfosidafnaosdifnosidaf sdnfjsdanfojsdafoujnsadfnsdaof sdajofnkds f sdf sdfsadofhhewrifhnre",
+            "duration":"10",
+            "star":"3",
+            "views":"3",
+            "status":"true"
+        },
+        {
+            "id":2,
+            "id_user":1,
+            "date":"18 NOV 2021",
+            "imageUrl": "https://nyousefali.com.br/blog/img/06.png",
+            "category":"games",
+            "title":"O que tem de novo no PS5? Tudo que você precisa saber.",
+            "resume":"Acabou de sair esse grande lançamento dos console. Leia esse artigo para saber das novidades!",
+            "content":"Lorem ipsm dafdsjfjdsafjbvjsd dfisdjfosidafnaosdifnosidaf sdnfjsdanfojsdafoujnsadfnsdaof sdajofnkds f sdf sdfsadofhhewrifhnre",
+            "duration":"10",
+            "star":"3",
+            "views":"3",
+            "status":"true"
+        },
+        {
+            "id":3,
+            "id_user":1,
+            "date":"14 SET 2021",
+            "imageUrl": "https://nyousefali.com.br/blog/img/06.png",
+            "category":"games",
+            "title":"O que tem de novo no PS5? Tudo que você precisa saber.",
+            "resume":"Acabou de sair esse grande lançamento dos console. Leia esse artigo para saber das novidades!",
+            "content":"Lorem ipsm dafdsjfjdsafjbvjsd dfisdjfosidafnaosdifnosidaf sdnfjsdanfojsdafoujnsadfnsdaof sdajofnkds f sdf sdfsadofhhewrifhnre",
+            "duration":"10",
+            "star":"5",
+            "views":"3",
+            "status":"true"
+        },
+        {
+            "id":4,
+            "id_user":1,
+            "date":"5 NOV 2021",
+            "imageUrl": "https://nyousefali.com.br/blog/img/07.png",
+            "category":"games",
+            "title":"O que tem de novo no PS5? Tudo que você precisa saber.",
+            "resume":"Acabou de sair esse grande lançamento dos console. Leia esse artigo para saber das novidades!",
+            "content":"Lorem ipsm dafdsjfjdsafjbvjsd dfisdjfosidafnaosdifnosidaf sdnfjsdanfojsdafoujnsadfnsdaof sdajofnkds f sdf sdfsadofhhewrifhnre",
+            "duration":"10",
+            "star":"5",
+            "views":"3",
+            "status":"true"
+        }
+    ],
+    "user":[
+        {
+            "id":1,
+            "user":"math21211",
+            "name":"Matheus",
+            "surname":"de Paula",
+            "token":"kdfjkdsjfioaEEEDSS0454",
+            "description":"Lorem djfdis djafijsdifjisdjfsdj",
+            "imageProfile":"https://api.github.com/users/Math2121/01.png"
+        },
+        {
+            "id":2,
+            "user":"math21211",
+            "name":"Emily",
+            "surname":"de Paula",
+            "token":"kdfjkdsjfiddddseeoaEEEDSS0454",
+            "description":"Lorem djfdis djafijsdifjisdjfsdj",
+            "imageProfile":"https://api.github.com/users/Math2121/01.png"
+        }
+    ]
+}
