@@ -37,7 +37,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div classNameName="bg-section">
+      <div className="bg-section">
         <section className="container">
           <h3 className="ml-2 mb-3">Mais Vistos</h3>
 
