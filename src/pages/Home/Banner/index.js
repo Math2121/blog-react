@@ -1,21 +1,18 @@
-import BannerImage from "../../../img/02.png";
-
-function Banner() {
+function Banner({ content }) {
   return (
     <>
       <section className="container">
         <div className="img-banner flex-center hidden">
-          <img src={BannerImage} alt="" />
+          <img src={content.imageUrl} alt="" />
         </div>
         <div className="row mt-3">
-          <h6 className="color-gray text-center">01 NOV 2022</h6>
-          <h6 className="uppercase color-primary text-center">tecnologia</h6>
-          <h4 className="text-center">O que esperar do cinema em 2022?</h4>
+          <h6 className="color-gray text-center">{content.date}</h6>
+          <h6 className="uppercase color-primary text-center">
+            {content.category}
+          </h6>
+          <h4 className="text-center">{content.title}</h4>
 
-          <p className="mt-1 text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium sunt veritatis voluptate repellendus iste dolorem
-          </p>
+          <p className="mt-1 text-center">{content.resume}</p>
 
           <div className="my-3 flex-center">
             <a href="/" className="link color-primary">

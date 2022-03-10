@@ -7,9 +7,9 @@ import { useFetch } from "hooks/useFetch";
 
 function Home() {
   const { data: main } = useFetch("/posts?star=5&_limit=2&_order=desc");
-  console.log(main)
-  // const { data: banner } = useFetch("/posts?_sort=date&_order=desc&_limit=1");
-  // const { data: mostSeen } = useFetch("/posts?_limit=3");
+  console.log(main);
+  const { data: banner } = useFetch("/posts?_sort=date&_order=desc&_limit=1");
+  const { data: mostSeen } = useFetch("/posts?_limit=3");
   return (
     <>
       <Hero />
@@ -42,14 +42,15 @@ function Home() {
           <h3 className="ml-2 mb-3">Mais Vistos</h3>
 
           <div className="row">
-            <Card />
-            <Card />
-            <Card />
+            {mostSeen?.map((item) => {
+              return <Card key={item.id} content={item} />;
+            })}
           </div>
         </section>
       </div>
-
-      <Banner />
+      {banner?.map((item) => (
+        <Banner key={item.id} content={item} />
+      ))}
     </>
   );
 }
