@@ -4,6 +4,8 @@ import Start from "../../svg/icon-star.svg";
 import Card from "./Card";
 import Banner from "./Banner";
 import { useFetch } from "hooks/useFetch";
+import Header from "pages/Header";
+import Footer from "pages/Footer";
 
 function Home() {
   const { data: main } = useFetch("/posts?star=5&_limit=2&_order=desc");
@@ -12,6 +14,7 @@ function Home() {
   const { data: mostSeen } = useFetch("/posts?_limit=3");
   return (
     <>
+      <Header />
       <Hero />
 
       <div className="container">
@@ -51,6 +54,7 @@ function Home() {
       {banner?.map((item) => (
         <Banner key={item.id} content={item} />
       ))}
+      <Footer />
     </>
   );
 }

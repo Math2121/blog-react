@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../../svg/blog-logo.svg'
 function Header() {
   return (
@@ -5,16 +6,16 @@ function Header() {
       <header className="px-2 py-1">
         <nav>
           <div className="logo">
-            <a href="/">
+            <Link to="/">
               <img src={Logo} alt="" />
-            </a>
+            </Link>
           </div>
           <ul className="menu">
             <li>
-              <a href="/">Sobre</a>
+              <Link to="/about">Sobre</Link>
             </li>
             <li>
-              <a href="/">Contato</a>
+              <Link to="/contact">Contato</Link>
             </li>
           </ul>
         </nav>
@@ -30,15 +31,15 @@ function Header() {
           </div>
 
           <div className="cta-desktop ml-3">
-            <a href="/" className="btn">
+            <Link to="/login" className="btn">
               Login
-            </a>
+            </Link>
           </div>
 
           <div className="cta-mobile">
-            <a href="/" className="link color-primary">
+            <Link to="/login" className="link color-primary">
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -47,14 +48,14 @@ function Header() {
         <div className="menu-mobile">
           <ul className="nav-mobile">
             <li>
-              <a href="/" className="link-menu-mobile">
+              <Link to="/about" className="link-menu-mobile">
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="link-menu-mobile">
+              <Link to="/contact" className="link-menu-mobile">
                 Contato
-              </a>
+              </Link>
             </li>
             <li className="py-2 px-2">
               <form action="" className="flex">

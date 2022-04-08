@@ -300,7 +300,7 @@
 }
 
 .container::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -326,7 +326,7 @@
 }
 
 .row::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -556,8 +556,9 @@
 }
 
 .profile-big {
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
-  border: 2px solid #1B69D2;
 }
 
 .profile-img {
@@ -565,11 +566,23 @@
   border: 2px solid #1B69D2;
 }
 
+.card {
+  border: 1px solid #151B26;
+  border-radius: 4px;
+  background-color: rgba(15, 20, 31, 0);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.card:hover {
+  background-color: rgba(15, 20, 31, 0.2);
+}
+
 .thumb img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .thumb:hover img {
@@ -577,34 +590,60 @@
           transform: scale(1.1);
 }
 
-.card {
-  border: 1px solid #151B26;
-  border-radius: 4px;
-  background-color: rgba(21, 27, 38, 0);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.card:hover {
-  background-color: rgba(21, 27, 38, 0.3);
-}
-
 .img-banner {
   width: 100%;
   max-height: 420px;
+  background-color: #0F141F;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .img-banner img {
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
 }
 
 .img-banner:hover img {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.bg-section {
+  background-color: rgba(15, 20, 31, 0.5);
+}
+
+.card-danger {
+  border: 2px solid #F03D3D;
+  border-radius: 4px;
+  background-color: rgba(240, 61, 61, 0.2);
+}
+
+.card-success {
+  border: 2px solid #0BB07B;
+  border-radius: 4px;
+  background-color: rgba(11, 176, 123, 0.2);
+}
+
+.card-warning {
+  border: 2px solid #FFCE52;
+  border-radius: 4px;
+  background-color: rgba(255, 206, 82, 0.2);
+}
+
+.card-info {
+  border: 2px solid #1B69D2;
+  border-radius: 4px;
+  background-color: rgba(27, 105, 210, 0.2);
 }
 
 .s-0 {
