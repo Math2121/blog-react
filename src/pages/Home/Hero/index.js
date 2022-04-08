@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Blog from "../../../svg/blog-logo.svg";
 function Hero() {
   return (
@@ -12,9 +13,9 @@ function Hero() {
               Um blog para todes. Escrever. Ler. Comentar. Contribuir.
               Aprender.Conectar
             </p>
-            <a href="/" className="btn mt-4">
+            <Link to="/login" className="btn mt-4">
               Começar a escrever
-            </a>
+            </Link>
           </div>
           <div className="grid-6">
             <img src={Blog} alt="" />

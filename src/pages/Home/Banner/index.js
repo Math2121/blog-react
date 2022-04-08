@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Banner({ content }) {
   return (
     <>
@@ -15,9 +17,9 @@ function Banner({ content }) {
           <p className="mt-1 text-center">{content.resume}</p>
 
           <div className="my-3 flex-center">
-            <a href="/" className="link color-primary">
+            <Link to={`/post/${content.id}`} className="link color-primary">
               Ler mais
-            </a>
+            </Link>
           </div>
         </div>
       </section>

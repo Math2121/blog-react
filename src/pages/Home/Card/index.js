@@ -1,28 +1,27 @@
+import { Link } from "react-router-dom";
+
 export default function Card({ content }) {
   return (
     <>
       <div className="grid-4 card p-0">
         <div className="thumb hidden">
-          <a href="/">
+          <Link to={`/post/${content.id}`}>
             <img src={content.imageUrl} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="mt-2 px-2">
           <h6 className="color-gray">{content.date}</h6>
           <h6 className="uppercase color-primary">{content.category}</h6>
-          <a href="" className="link-title">
-            <h4>O que esperar do cinema em 2022?</h4>
-          </a>
+          <Link to={`/post/${content.id}`} className="link-title">
+            <h4 className="mt-1">{content.title}</h4>
+          </Link>
 
-          <p className="mt-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            accusantium sunt veritatis voluptate repellendus iste dolorem
-          </p>
+          <p className="mt-1">{content.resume}</p>
 
           <div className="my-3">
-            <a href="/" className="link color-primary">
+            <Link to={`/post/${content.id}`} className="link color-primary">
               Ler mais
-            </a>
+            </Link>
           </div>
         </div>
       </div>
